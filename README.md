@@ -7,6 +7,7 @@ Abrir desde el simulador coppelia, aseguararse que roscore este funcionando
 
 Revisar en terminal que el nodo de copelia sim esta activo, en un terminal ubicado en catkin_ws:
 >> source devel.setup.bash
+
 >> rosnode list
 
 debe mostrar:

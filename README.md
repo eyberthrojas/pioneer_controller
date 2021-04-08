@@ -15,7 +15,8 @@ debe mostrar:
 /sim_ros_interface
 
 
-Version probada de CoppeliaSim: CoppeliaSim_Edu_V4_2_0_Ubuntu20_04
+Version probada de CoppeliaSim: 
+CoppeliaSim_Edu_V4_2_0_Ubuntu20_04
 
 
 

@@ -31,10 +31,13 @@ def pioneer_controller():
         
 if __name__ == '__main__':
     try:
+        # crea nodo pioneer_controller
         rospy.init_node('pioneer_controller', anonymous=True)
         rospy.loginfo("Nodo Iniciado")
+        # Suscripcion a topicos
         rospy.Subscriber('/pioneerPosition', Twist, pioneerPosCallback)
         rospy.Subscriber('/simulationTime', Float32, simTimeCallback)
+        # Publicacion a topicos a topicos
         motorsVelPub = rospy.Publisher('/motorsVel', Float32MultiArray, queue_size=10)
         vel = Float32MultiArray()
         vel.data = np.empty(2)
